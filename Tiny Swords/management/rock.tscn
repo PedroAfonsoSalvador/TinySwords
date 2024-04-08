@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://c8yqt6pd8fuc8"]
+
+[ext_resource type="Texture2D" uid="uid://0jowt3awur78" path="res://assets/terrain/decoration/water_rock.png" id="1_b002r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1x50"]
+atlas = ExtResource("1_b002r")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nv7y"]
+atlas = ExtResource("1_b002r")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jny8p"]
+atlas = ExtResource("1_b002r")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wi10w"]
+atlas = ExtResource("1_b002r")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnelf"]
+atlas = ExtResource("1_b002r")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_318fe"]
+atlas = ExtResource("1_b002r")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfbwq"]
+atlas = ExtResource("1_b002r")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxkqb"]
+atlas = ExtResource("1_b002r")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ke2lu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1x50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nv7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jny8p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wi10w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnelf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_318fe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfbwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxkqb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Rock" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ke2lu")
+autoplay = "default"
